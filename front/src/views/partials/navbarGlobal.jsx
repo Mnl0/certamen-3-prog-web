@@ -31,13 +31,13 @@ const GlobalNavbar = ({ onNavClick }) => {
                 <div className={stylesNavbarGlobal.contLinks}>
                     <ul className={stylesNavbarGlobal.globalLinks}>
                         <li>
-                            <Link to="/" onClick={handleClick} className={stylesNavbarGlobal.link}>Home</Link>
+                            <Link to="/" onClick={handleClick} className={stylesNavbarGlobal.link}>Inicio</Link>
                         </li>
                         <li>
-                            <Link to="/about" onClick={handleClick} className={stylesNavbarGlobal.link}>About</Link>
+                            <Link to="/about" onClick={handleClick} className={stylesNavbarGlobal.link}>Nosotros</Link>
                         </li>
                         <li>
-                            <Link to="contact" onClick={handleClick} className={stylesNavbarGlobal.link}>Contact</Link>
+                            <Link to="/contact" onClick={handleClick} className={stylesNavbarGlobal.link}>Contacto</Link>
                         </li>
                     </ul>
                     <ul className={isOpen ? `${stylesNavbarGlobal.sesionLinks} ${stylesNavbarGlobal.menuOpen}` : stylesNavbarGlobal.sesionLinks}>

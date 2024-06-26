@@ -1,0 +1,33 @@
+:root {
+    --arrow-bg: #c9d4eb80;
+    --arrow-icon: url('../../../icons/down-solid.svg');
+    --option-bg: rgb(201, 69, 69);
+    --select-bg: rgba(255, 255, 255, 0.2);
+    --text-options-color: #17161680;
+  }
+
+.selectGlass {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: auto;
+    max-height: 80px;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1em,
+                linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: #000;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2),
+                2px 0 .8em 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 0 0 20px 0;
+}
+.selectGlass > svg{
+    fill: #fff;
+}
+.selectGlass option{
+    color: var(--text-options-color);
+    background: linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+}
+  
